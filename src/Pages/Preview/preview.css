@@ -1,0 +1,88 @@
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.card {
+  float: none;
+  margin-bottom: 40px;
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 155px;
+  color: #1042b2;
+  border-radius: 12px;
+  padding: 20px 15px;
+  height: 135px;
+  display: inline-block;
+  position: relative;
+  border: 1px solid #1042b2;
+  padding: 20px;
+  text-align: center;
+  border-radius: 13px;
+  transition: all 0.5s;
+}
+.card:hover {
+  background: #1042b2;
+  color: white;
+}
+.card > h4 {
+  text-transform: uppercase;
+  margin: 0;
+}
+.iconcontainer {
+  left: 40px;
+  bottom: -35px;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  z-index: 2;
+  color: #1042b2;
+  border: 1px solid #1042b2;
+
+  position: absolute;
+}
+.profile {
+  background: url("../../Assets/profile.png");
+  background-size: 30px;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+.employment {
+  background: url("../../Assets/employment-history.png");
+  background-size: 30px;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+.education {
+  background: url("../../Assets/education.png");
+  background-size: 30px;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+.grid {
+  background: url("../../Assets/scoring-grid.png");
+  background-size: 30px;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+.benefits {
+  background: url("../../Assets/benefits.png");
+  background-size: 30px;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+.questions {
+    background: url("../../Assets/question.png");
+    background-size: 30px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
