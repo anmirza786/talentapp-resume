@@ -11,8 +11,8 @@ import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import CssBaseline from "@mui/material/CssBaseline";
 import GlobalStyles from "@mui/material/GlobalStyles";
-import { Link, Modal, TextField } from "@mui/material";
-// import { Link } from "react-router-dom";
+import { Modal, TextField } from "@mui/material";
+import { Link } from "react-router-dom";
 
 function Copyright(props) {
   return (
@@ -23,7 +23,7 @@ function Copyright(props) {
       {...props}
     >
       {"Copyright © "}
-      <Link color="inherit" href="/">
+      <Link color="inherit" to="/">
         InsightHR
       </Link>{" "}
       {new Date().getFullYear()}
@@ -127,7 +127,7 @@ const Navbar = (props) => {
     // eslint-disable-next-line no-restricted-globals
     // setOpenSignup(false);
     localStorage.removeItem("token");
-    
+
   };
   return (
     <React.Fragment>
@@ -143,7 +143,7 @@ const Navbar = (props) => {
       >
         <Toolbar sx={{ flexWrap: "wrap" }}>
           <Typography noWrap sx={{ flexGrow: 1 }}>
-            <Link href="/">
+            <Link to="/">
               <img
                 src={Logo}
                 alt="InsightHR"
@@ -155,7 +155,7 @@ const Navbar = (props) => {
             {/* <Link
               variant="button"
               color="text.primary"
-              href="#"
+              to="#"
               sx={{ my: 1, mx: 1.5 }}
             >
               Features
@@ -163,7 +163,7 @@ const Navbar = (props) => {
             <Link
               variant="button"
               color="text.primary"
-              href="#"
+              to="#"
               sx={{ my: 1, mx: 1.5 }}
             >
               Enterprise

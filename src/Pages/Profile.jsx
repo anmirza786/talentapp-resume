@@ -41,7 +41,7 @@ const Profile = () => {
                 rowSpacing={1}
                 columnSpacing={{ xs: 1, sm: 2, md: 3 }}
               >
-                <Grid item md={4}>
+                <Grid item md={5}>
                   <TextField
                     margin="normal"
                     required
@@ -53,7 +53,7 @@ const Profile = () => {
                     autoComplete="current-password"
                   />
                 </Grid>
-                <Grid item md={4}>
+                <Grid item md={3}>
                   <TextField
                     margin="normal"
                     required
@@ -65,7 +65,7 @@ const Profile = () => {
                     autoComplete="current-password"
                   />
                 </Grid>
-                <Grid item md={4}>
+                <Grid item md={3}>
                   <TextField
                     margin="normal"
                     required
@@ -114,7 +114,7 @@ const Profile = () => {
             fullWidth
             variant="contained"
             sx={{ mt: 3, mb: 2 }}
-            style={{width: "100px"}}
+            style={{ width: "100px" }}
           >
             submit
           </Button>

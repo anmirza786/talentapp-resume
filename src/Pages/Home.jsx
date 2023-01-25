@@ -1,8 +1,9 @@
 import * as React from "react";
 import desktop from "../Assets/desktop.png";
-import { Button, Link } from "@mui/material";
+import { Button } from "@mui/material";
 import Container from "@mui/material/Container";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   React.useEffect(() => {}, [localStorage]);
@@ -48,7 +49,7 @@ const Home = () => {
           >
             {localStorage.getItem("token") && (
               <>
-                <Link href="upload-resume" style={{ textDecoration: "none" }}>
+                <Link to="upload-resume" style={{ textDecoration: "none" }}>
                   <Button
                     variant="contained"
                     color="primary"
@@ -62,7 +63,7 @@ const Home = () => {
                     Upload Resume <ArrowForwardIosIcon />
                   </Button>
                 </Link>
-                <Link href="preview" style={{ textDecoration: "none" }}>
+                <Link to="preview" style={{ textDecoration: "none" }}>
                   <Button
                     variant="contained"
                     color="secondary"
